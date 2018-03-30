@@ -1,0 +1,8 @@
+http://pythonhow.com/using-virtualenv-with-your-flask-app/
+
+#activate virtual env
+virtual\Scripts\activate
+
+virtual\Scripts\python app\app.py
+
+That will show the same website on localhost:5000 as it did before:

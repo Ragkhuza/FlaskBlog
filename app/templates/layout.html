@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/bootstrap.min.css') }}">
+</head>
+<body>
+    {% include 'includes/_nav.html' %}
+    <div class="container">
+    {% include 'includes/_messages.html' %}
+      {% block body %}
+      {% endblock %}
+    </div>
+
+<script src="{{ url_for('static', filename = 'js/jquery-3.2.1.min.js') }}"></script>
+<script src="{{ url_for('static', filename = 'js/bootstrap.min.js') }}"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/1.0.0-beta.1/classic/ckeditor.js"></script>
+<script type="text/javascript">
+      ClassicEditor
+        .create( document.querySelector( '#editor' ) );
+</script>
+</body>
+</html>
