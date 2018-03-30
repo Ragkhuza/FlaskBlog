@@ -9,6 +9,8 @@ from functools import wraps
 
 app = Flask(__name__)
 
+app.config['SECRET_KEY'] = "gSXj2hENfhFDNXmcO0wGLQjmpbMGb243"
+
 # Config MySQL
 app.config['MYSQL_HOST'] = 'us-cdbr-iron-east-05.cleardb.net'
 app.config['MYSQL_USER'] = 'bae5ca553420bb'
@@ -278,5 +280,5 @@ def delete_article(id):
 
 
 if __name__ == '__main__':
-    app.secret_key = 'secret12345'
+    app.secret_key = 'gSXj2hENfhFDNXmcO0wGLQjmpbMGb243'
     app.run(debug=True)
